@@ -1,0 +1,22 @@
+<package>
+  <description brief="IMUSensor">
+
+     IMUSensor
+
+  </description>
+  <author>Vitor</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/IMUSensor</url>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="rostime"/>
+  <depend package="rostopic"/>
+  <export>
+    <cpp cflags="-I${prefix}/include -I${prefix}/CmtSrc" lflags="-L${prefix}/lib -Wl,-rpath,${prefix}/lib -lmtig -limucap"/>
+  </export>
+
+</package>
+
+
