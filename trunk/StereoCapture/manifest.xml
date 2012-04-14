@@ -1,0 +1,27 @@
+<package>
+  <description brief="StereoCapture">
+
+     StereoCapture
+
+  </description>
+  <author>Vitor</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/StereoCapture</url>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="rostopic"/>
+  <depend package="image_geometry"/>
+  <depend package="cv_bridge"/>
+  <depend package="sensor_msgs"/>
+  <depend package="opencv2"/>
+  <depend package="rostime"/>
+  <depend package="image_transport"/>
+  <depend package="IMUSensor"/>
+  <export>
+    <cpp cflags="-I${prefix}/include" lflags="-L${prefix}/lib -Wl,-rpath,${prefix}/lib -lstcap -lsvs -lsvscap -ldcap"/>
+  </export>
+
+</package>
+
+

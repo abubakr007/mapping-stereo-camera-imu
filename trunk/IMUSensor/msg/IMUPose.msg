@@ -1,0 +1,3 @@
+Header header
+geometry_msgs/PoseStamped quartenionPose
+geometry_msgs/PoseStamped eulerPose

@@ -1,0 +1,29 @@
+<package>
+  <description brief="Mapping">
+
+     Mapping
+
+  </description>
+  <author>Vitor</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/Mapping</url>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="image_geometry"/>
+  <depend package="cv_bridge"/>
+  <depend package="sensor_msgs"/>
+  <depend package="rostime"/>
+  <depend package="pcl"/>
+  <depend package="pcl_ros"/>
+  <depend package="octomap"/>
+  <depend package="octomap_ros"/>
+  <depend package="octomap_server"/>
+  <depend package="StereoVision"/>
+  <export>
+    <cpp cflags="-I${prefix}/include" lflags="-L${prefix}/lib -Wl,-rpath,${prefix}/lib -lmapping"/>
+  </export>
+
+</package>
+
+
